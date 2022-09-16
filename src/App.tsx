@@ -30,8 +30,7 @@ const App:React.FC = () => {
       <Heading />
       <Input addToCollection={addToCollection} />
       <div className="container" id="container">
-      
-      <p className="text-center font-weight-bold">Click the "X" to HAHA remove the item list</p>
+      <p className="text-center font-weight-bold">Click the "X" to  remove the item list</p>
         <div id="main" className="card card-body">
           <h1 className="title text-center">List of Todos</h1>
           {collection.map((element,index) => {
