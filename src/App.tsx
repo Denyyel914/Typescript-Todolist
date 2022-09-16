@@ -4,13 +4,20 @@ import Heading from './components/Heading';
 import Input from './components/Input'
 import List from './components/List'
 
+
 const App:React.FC = () => {
   const [collection, setCollection] = useState<string[]>([])
   const [line,setLine] = useState<boolean>(false)
  
   
 
-  const addToCollection = (value:string) => setCollection([...collection, value]);
+  const addToCollection = (value:string) => {
+    if(value === '') {
+      alert('Please input a todo list')
+    } else {
+      setCollection([...collection, value])
+    }
+  };
   const handleDelete = (id: number) => {
     setCollection(prev => {
       return prev.filter((element, index) => {
@@ -19,22 +26,21 @@ const App:React.FC = () => {
     })
   }
 
-  const Linethough = () => {
-    setLine(!line)
-  }
- 
+  const Linethough = () => setLine(!line)
   
+ 
+  console.log(line)
   {console.log(collection)}
   return (
     <div>
       <Heading />
       <Input addToCollection={addToCollection} />
       <div className="container" id="container">
-      <p className="text-center font-weight-bold">Click ✏️ to edit the todolist and click the ❌ to  remove the item list</p>
+      <p className="text-center font-weight-bold">Click ✔️ to mark the list done and click the ❌ to  remove the item from the list</p>
         <div id="main" className="card card-body">
           <h1 className="title text-center">List of Todos</h1>
           {collection.map((element,index) => {
-            return <List item={element} key={index} id={index} line={line} onLinethrough={Linethough} onDelete={handleDelete} />
+            return <List  item={element} key={index} id={index} line={line} onLinethrough={Linethough} onDelete={handleDelete} />
           })}
         </div>
       </div>
