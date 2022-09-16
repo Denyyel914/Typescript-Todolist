@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Denyyel914.github.io/Typescript-Todolist/static/css/main.64417b1e.css",
-    "main.js": "/Denyyel914.github.io/Typescript-Todolist/static/js/main.ad4e39f3.js",
-    "index.html": "/Denyyel914.github.io/Typescript-Todolist/index.html",
-    "main.64417b1e.css.map": "/Denyyel914.github.io/Typescript-Todolist/static/css/main.64417b1e.css.map",
-    "main.ad4e39f3.js.map": "/Denyyel914.github.io/Typescript-Todolist/static/js/main.ad4e39f3.js.map"
+    "main.css": "/Typescript-Todolist/static/css/main.64417b1e.css",
+    "main.js": "/Typescript-Todolist/static/js/main.8768436a.js",
+    "index.html": "/Typescript-Todolist/index.html",
+    "main.64417b1e.css.map": "/Typescript-Todolist/static/css/main.64417b1e.css.map",
+    "main.8768436a.js.map": "/Typescript-Todolist/static/js/main.8768436a.js.map"
   },
   "entrypoints": [
     "static/css/main.64417b1e.css",
-    "static/js/main.ad4e39f3.js"
+    "static/js/main.8768436a.js"
   ]
 }
